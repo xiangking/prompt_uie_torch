@@ -1,0 +1,2 @@
+# prompt_uie_torch
+基于PaddleNLP开源的抽取式UIE进行医学命名实体识别
