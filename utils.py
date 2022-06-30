@@ -83,13 +83,13 @@ def get_bool_ids_greater_than(probs, limit=0.5, return_prob=False):
 
     Args:
         probs (list):
-            概率列表: [[每个位置是span的首index的概率], [每个位置是span的尾index的概率]]
+            概率列表: [[每个位置是span所需index的概率]]
             例如: [[0.1, 0.1, 0.2, 0.5, 0.1, 0.3], [0.7, 0.6, 0.1, 0.1, 0.1, 0.1]]
         limit (float, optional): 阈值, 默认值为0.5
         return_prob (bool, optional): 返回是否带上概率, 默认值为False
 
     Returns:
-        list: span的index列表, 例如: [[3], [0, 1]]
+        list: span的index列表, 例如: [[], [0, 1]]
 
     Reference:
         [1] https://github.com/PaddlePaddle/PaddleNLP/blob/develop/model_zoo/uie/utils.py
